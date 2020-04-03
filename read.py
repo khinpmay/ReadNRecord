@@ -32,7 +32,7 @@ class Board:
 		for index in range(len(new_strings)):
 			toconvert = new_strings[index]
 			self.decodedbytes[index] = float(toconvert) 
-			self.file.write(str(self.decodedbytes[index]) + ',')	# get tactile values -1
+			self.file.write(str(self.decodedbytes[index]) + ',')
 		self.file.write('\n')
 
 	def closeFile(self):
